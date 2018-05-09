@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Highlight Popup</title>
+        <link rel="stylesheet" href="dist/main.css" type="text/css">
+    </head>
+    <body>
+        <div id="menu" class="menu">
+            <span id="location">No location set</span>
+            <div id="menu-icon" class="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="sidebar" class="sidebar">
+                <div class="options">
+                    <button class="units-btn active" data-units="metric" type="button">&deg;C</button>
+                    <button class="units-btn" data-units="imperial" type="button">&deg;F</button>
+                    <button id="refresh">Refresh</button>
+                </div>
+                <div class="location-search">
+                    <h3>Change location</h3>
+                    <input id="location-input" type="text" placeholder="e.g. Waterloo, CA">
+                    <button id="search">
+                        <img src="icons/search_glass.svg">
+                    </button>
+                    <p class="instructions">Search for a location and select from those shown below. For increased accuracy, include a two character country code</p>
+                </div>
+                <div id="locations" class="locations"></div>
+                <div class="credits">
+                    <p></p>
+                </div>
+            </div>
+        </div><!--menu-->
+        <div id="spinner" class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="main">
+            <!-- app markup placed here-->
+			 
+        </div>
+        <div id="no-location">
+            <p>Please select a location from the menu in the top right corner.</p>
+        </div>
+        <div id="error-message">
+            <p>Unable to update data.</p>
+        </div>
+        <script src="dist/main.js"></script>
+		
+		<div class="main-container">
+    <div class="header">
+        <div class="right">
+            <button id="sl-cat"></button>
+            <div id="cat-list" style="display: none">
+                <span class="arr"></span>
+                <ul class="drop-down" id="categories">
+                </ul>
+            </div>
+        </div>
+        <span class="line"></span>
+
+        <div id="sl-country" class="right">
+            <span id="current-country"></span>
+            <span class="arr"></span>
+        </div>
+        <div id="country-list" style="display: none">
+            <span class="arr"></span>
+            <ul class="drop-down" id="countries"></ul>
+        </div>
+        <span class="line"></span>
+
+        <div id="weather" class="right">
+            <img id="weather-icon" src=""/>
+
+            <div class="left">
+                <span id="location"></span>
+                <span id="degree"></span>
+            </div>
+        </div>
+        <span class="line"></span>
+    </div>
+    <div class="main-news-container">
+        <div id="news-pic" class="news-container"></div><br />
+        <div id="news-list" class="news-container"></div>
+    </div>
+    <div class="footer">
+        <span class="left" id="view"></span>
+        <button id="pic-view"></button>
+        <button id="list-view"></button>
+    <span class="right">
+        <a href="" id="all" target="_blank"></a>
+    </span>
+    </div>
+    </div>
+<script type="text/javascript" src="nwsh-back.js"></script>
+<script type="text/javascript" src="nwsh-content.js"></script>
+		<script >var elem = document.getElementById("forecast");
+elem.remove();</script>
+    </body>
+</html>

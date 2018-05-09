@@ -1,0 +1,408 @@
+img,legend{ 
+border:0;
+
+}
+
+legend,td,th{ 
+
+padding:0;
+
+}
+
+.spinner,body,div.menu span,sub,sup{ 
+
+position:relative;
+
+}
+
+a:active,a:hover,div.menu .sidebar .location-search #location-input:focus { 
+
+outline:0
+
+}
+
+div.current:after,div.forecast .day:after,div.menu .sidebar #locations .location:after,div.menu .sidebar .options:after,div.today:after{ 
+
+content:"";
+visibility:hidden;
+clear:both;
+
+}
+
+body
+{ 
+
+margin:0;
+
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{ 
+
+display:block;
+
+}
+
+audio,canvas,progress,video{ 
+
+display:inline-block;
+vertical-align:baseline;
+
+}
+
+.spinner,[hidden],template
+{ 
+
+display:none;
+
+}
+
+audio:not([controls])
+{ 
+
+display:none;
+height:0;
+
+}
+
+a{ 
+
+background-color:transparent;
+
+}
+
+abbr[title]{ 
+
+border-bottom:1px dotted;
+
+}
+
+b,optgroup,strong{ 
+
+font-weight:700;
+
+}
+
+dfn{ 
+
+font-style:italic;
+
+}
+
+h1{ 
+
+font-size:2em;
+margin:.67em 0;
+
+}
+
+mark{ 
+
+background:#ff0;
+color:#000;
+
+}
+
+.spinner>div,div.menu .menu-icon div,hr{ 
+background-color:#6a6a6a;
+
+}
+
+small{ 
+
+font-size:80%;
+
+}
+
+sub,sup { 
+
+font-size:75%;
+line-height:0;
+vertical-align:baseline;
+
+}
+
+sup{ 
+
+top:-0.5em;
+
+}
+
+sub{ 
+
+bottom:-0.25em;
+
+}
+
+svg:not(:root){ 
+
+overflow:hidden;
+
+}
+
+figure
+{ 
+
+margin:1em 40px;
+
+}
+
+hr{ 
+
+-moz-box-sizing:content-box;box-sizing:content-box
+}
+pre,textarea{ 
+overflow:auto
+}
+code,kbd,pre,samp{ 
+font-family:monospace,monospace;font-size:1em
+}
+button,input,optgroup,select,textarea{ 
+color:inherit;font:inherit;margin:0
+}
+button{ 
+overflow:visible
+}
+button,select{ 
+text-transform:none
+}
+button,html input[type=button],input[type=reset],input[type=submit]{ 
+-webkit-appearance:button;
+cursor:pointer;
+background: url(/list.png) 0 0 no-repeat #555;
+width: 25px;
+height: 25px;
+}
+button[disabled],html input[disabled]{ 
+cursor:default
+}
+button::-moz-focus-inner,input::-moz-focus-inner{ 
+border:0;padding:0
+}
+input{ 
+line-height:normal
+}
+input[type=checkbox],input[type=radio]{ 
+box-sizing:border-box;padding:0
+}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{ 
+height:auto
+}
+input[type=search]{ 
+-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box
+}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{ 
+-webkit-appearance:none
+}
+fieldset{ 
+border:1px solid silver;margin:0 2px;padding:.35em .625em .75em
+}
+table{ 
+border-collapse:collapse;border-spacing:0
+}
+html{ 
+font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;box-sizing:border-box
+}
+*,:after,:before{ 
+box-sizing:inherit
+}
+.spinner{ 
+clear:both;margin:100px auto;width:40px;height:10px;top:50px
+}
+.spinner>div{ 
+width:10px;height:10px;display:block;float:left;border-radius:5px;-webkit-animation:pulse 1.5s infinite ease-in-out;animation:pulse 1.5s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both
+}
+.spinner>div:nth-child(2){ 
+margin-left:5px;-webkit-animation-delay:.5s;animation-delay:.5s
+}
+.spinner>div:nth-child(3){ 
+margin-left:5px;-webkit-animation-delay:1s;animation-delay:1s
+}
+@-webkit-keyframes pulse{ 
+0%,100%{ 
+-webkit-transform:scale(0)
+}
+50%{ 
+-webkit-transform:scale(1)
+}
+
+}
+@keyframes pulse{ 
+0%,100%{ 
+transform:scale(0)
+}
+50%{ 
+transform:scale(1)
+}
+
+}
+@font-face{ 
+font-family:Raleway;src:url(Raleway-Regular.ttf)
+}
+body{ 
+height:600px;width:340px;padding-left:20px;padding-right:20px;overflow-y:auto;overflow-x:hidden;color:#6a6a6a;font-family:Raleway,helvetica,sans-serif;font-size:18px
+}
+hr{ 
+height:1px;border:none
+}
+div.menu{ 
+float:right;margin-top:20px;margin-right:20px
+}
+div.menu span{ 
+z-index:5;bottom:3px
+}
+div.menu .menu-icon{ 
+z-index:5;position:relative;display:inline-block;padding:1px 3px;border:2px solid transparent;border-radius:3px;-webkit-transition:border-color .5s;transition:border-color .5s
+}
+div.menu .menu-icon:hover{ 
+border-color:#6a6a6a;cursor:pointer
+}
+div.menu .menu-icon div{ 
+z-index:5;width:15px;height:2px;margin-top:2px;margin-bottom:2px
+}
+div.menu .sidebar{ 
+display:none;z-index:1;position:absolute;top:0;right:0;width:250px;height:600px;box-shadow:0 2px 4px #777;background-color:#fff;padding-top:60px;padding-left:30px;padding-right:30px
+}
+div.menu .sidebar .options:after{ 
+display:block;height:0;font-size:0
+}
+div.menu .sidebar .options>button{ 
+display:inline;font-size:13.99px;margin:0;float:left;padding:4px 8px;border:1px solid #d8d8d8;box-shadow:none;background-color:#fff
+}
+div.menu .sidebar .options>button:first-child{ 
+border-top-left-radius:8px;border-bottom-left-radius:8px;border-right:none
+}
+div.menu .sidebar .options>button:nth-child(2){ 
+border-top-right-radius:8px;border-bottom-right-radius:8px
+}
+div.menu .sidebar .options>button.active{ 
+background-color:#f4f4f4
+}
+div.menu .sidebar .options #refresh{ 
+float:right;font-size:13.99px;text-decoration:underline;border:none
+}
+div.menu .sidebar .options #refresh:hover{ 
+cursor:pointer
+}
+div.menu .sidebar .location-search h3{ 
+font-size:13.99px;margin-top:20px;margin-bottom:10px
+}
+div.menu .sidebar .location-search #location-input{ 
+float:left;width:155px;border:1px solid #d8d8d8;border-top-left-radius:8px;border-bottom-left-radius:8px;box-shadow:none;padding:8px;font-size:13.99px;margin-bottom:10px
+}
+div.menu .sidebar .location-search #search{ 
+float:left;width:35px;border:1px solid #d8d8d8;border-top-right-radius:8px;border-bottom-right-radius:8px;border-left:none;background-color:#fff;padding:9px 9px 7px 7px;font-size:13.99px
+}
+div.menu .sidebar .location-search #search:hover{ 
+background-color:#f4f4f4
+}
+div.menu .sidebar .location-search .instructions{ 
+clear:both;font-size:9.99px;text-align:center
+}
+div.menu .sidebar #locations{ 
+height:300px;overflow-y:auto
+}
+div.menu .sidebar #locations .location{ 
+font-size:13.99px;border-bottom:1px solid #6a6a6a;padding:15px 0
+}
+div.menu .sidebar #locations .location:after{ 
+display:block;height:0;font-size:0
+}
+div.menu .sidebar #locations .location span:first-child{ 
+float:left;margin-left:4%;width:56%
+}
+div.menu .sidebar #locations .location span:first-child:hover{ 
+text-decoration:underline;cursor:pointer
+}
+div.menu .sidebar #locations .location span:last-child{ 
+float:right;margin-right:4%;width:36%;text-align:right
+}
+div.menu .sidebar .credits{ 
+position:absolute;bottom:0;width:190px;height:50px;font-size:9.99px;text-align:center
+}
+div.menu .sidebar .credits a{ 
+color:#6a6a6a;text-decoration:none
+}
+div.menu .sidebar #locations-error{ 
+text-align:center;font-size:13.99px
+}
+div.current{ 
+position:relative;padding-left:25px;margin-top:10px;margin-bottom:20px;clear:both
+}
+div.current:after{ 
+display:block;height:0;font-size:0
+}
+div.current .current-img{ 
+float:left;height:100px
+}
+div.current .weather{ 
+float:left;margin-left:20px
+}
+div.current .weather>span{ 
+display:block;font-size:20px
+}
+div.current .weather>span:first-child{ 
+font-size:47.99px
+}
+div.today{ 
+margin:10px auto;width:280px;padding-left:30px;padding-right:30px
+}
+div.today:after{ 
+display:block;height:0;font-size:0
+}
+div.today .period{ 
+float:left;text-align:center;width:20%
+}
+div.today .period>img,div.today .period>span{ 
+display:block
+}
+div.today .period .temp,div.today .period .time{ 
+font-size:11.99px
+}
+div.today .period img{ 
+margin:3px auto;height:22px
+}
+div.today .period .precip{ 
+font-size:9.99px
+}
+div.forecast{ 
+margin-top:20px
+}
+div.forecast .day{ 
+position:relative;margin-bottom:20px;padding-right:10px
+}
+div.forecast .day:after{ 
+display:block;height:0;font-size:0
+}
+div.forecast .day:last-child{ 
+margin-bottom:10px
+}
+div.forecast .day .img-wrapper{ 
+float:left;width:90px;margin-right:10px;text-align:center
+}
+div.forecast .day .img-wrapper img{ 
+height:40px
+}
+div.forecast .day div.weather{ 
+float:left
+}
+div.forecast .day div.weather span{ 
+display:block;font-size:11.99px
+}
+div.forecast .day div.weather span:first-child{ 
+font-size:20px
+}
+div.forecast .day div.date{ 
+float:right;text-align:right
+}
+#error-message,#no-location{ 
+display:none;font-size:9.99px;text-align:center
+}
+div.forecast .day div.date p{ 
+margin:0
+}
+#no-location{ 
+clear:both;position:relative;top:50px;padding:0 50px
+}
+#error-message{ 
+position:absolute;bottom:0;width:100%;padding-right:20px
+}

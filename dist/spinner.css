@@ -1,0 +1,30 @@
+.spinner{
+	display:none;clear:both;margin:100px auto;width:40px;height:10px;position:relative;top:50px
+	}
+	.spinner>div{
+	background-color:#6a6a6a;width:10px;height:10px;display:block;float:left;border-radius:5px;-webkit-animation:pulse 1.5s infinite ease-in-out;animation:pulse 1.5s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both
+	}
+	.spinner>div:nth-child(2){
+	margin-left:5px;-webkit-animation-delay:.5s;animation-delay:.5s
+	}
+	.spinner>div:nth-child(3){
+	margin-left:5px;-webkit-animation-delay:1s;animation-delay:1s
+	}
+	@-webkit-keyframes pulse{
+	0%,100%{
+	-webkit-transform:scale(0)
+	}
+	50%{
+	-webkit-transform:scale(1)
+}
+
+	}
+	@keyframes pulse{
+	0%,100%{
+	transform:scale(0)
+	}
+	50%{
+	transform:scale(1)
+}
+
+}
