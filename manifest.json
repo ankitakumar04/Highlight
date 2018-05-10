@@ -1,0 +1,42 @@
+{
+    "manifest_version": 2,
+
+    "name": "Highlight",
+    "description": "Will it work",
+    "version": "0.1.3",
+
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+
+    "browser_action": {
+	"default_title":"HighLights",
+        "default_icon": {
+            "19": "icons/favicons19/02.png",
+            "38": "icons/favicons38/02.png"
+        },
+        "default_popup": "popup.html"
+    },
+	
+    "background": {
+        "scripts": ["dist/updateIcon.js","nwsh-background.js","nwsh-back.js"],
+        "persistant": false
+    },
+	
+	"content_scripts": [
+        {
+            "matches": ["*://*.newshub.org/*"],
+            "js": ["nwsh-ext.js"]
+        }
+    ],
+
+    "permissions": [
+        "storage",
+        "alarms",
+		 "*://*.newshub.org/*",
+        "*://newshub.org/"
+    ],
+	 "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
