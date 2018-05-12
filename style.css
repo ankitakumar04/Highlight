@@ -81,10 +81,7 @@ html, body {
 }
 
 .footer button {
-    width: 16px;
-    height: 16px;
     margin: 5px 2px;
-    background:url(images/small-icons-sprite.png) 0 0 no-repeat #555;;
     border: 0;
     outline: none;
     cursor: pointer;

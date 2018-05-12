@@ -168,9 +168,9 @@ text-transform:none
 button,html input[type=button],input[type=reset],input[type=submit]{ 
 -webkit-appearance:button;
 cursor:pointer;
-background: url(/list.png) 0 0 no-repeat #555;
-width: 25px;
-height: 25px;
+background: url("list.png");
+width: 125px;
+height: 35px;
 }
 button[disabled],html input[disabled]{ 
 cursor:default

@@ -153,7 +153,7 @@ function addNewsByCat(data, view, amount, last, more) {
         tl.classList.add('news-title');
         tl.target = '_blank';
         if (parseInt(data[i].embeds_type) != 0) {
-            tl.innerHTML = '<img src="images/icon_' + data[i].embeds_type + '.png"/><br/>' + data[i].news_title;
+            tl.innerHTML = '<img src="images/icon_' + data[i].embeds_type + '.png"/>' + data[i].news_title;
         } else {
             tl.innerHTML = data[i].news_title;
         }
@@ -169,7 +169,7 @@ function addNewsByCat(data, view, amount, last, more) {
                 var imgUrl = data[i].newshubNewsUrl + vParam;
                 addHandler(imgUrl, img, view, data[i].news_id);
                 img.target = '_blank';
-                img.innerHTML = '<img src="' + data[i].img_src + '"/><br/>';
+                img.innerHTML = '<img src="' + data[i].img_src + '"style = "left: 100px; height: 150px; width: 250px;"/><br/>';
             } else {
                 img.style.display = 'none';
             }
