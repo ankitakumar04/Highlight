@@ -67,6 +67,7 @@ height:0;
 a{ 
 
 background-color:transparent;
+cursor: pointer;
 
 }
 
@@ -203,7 +204,10 @@ html{
 font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;box-sizing:border-box
 }
 *,:after,:before{ 
-box-sizing:inherit
+box-sizing:inherit;
+}
+#current-country{
+    cursor: pointer;
 }
 .spinner{ 
 clear:both;margin:100px auto;width:40px;height:10px;top:50px
